@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style type="text/css">
+#capsule1{
+background: #ffc1c2;
+background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmYzFjMiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNlODAwMDMiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+background: -moz-linear-gradient(left,  #ffc1c2 0%, #e80003 100%);
+background: -webkit-gradient(linear, left top, right top, color-stop(0%,#ffc1c2), color-stop(100%,#e80003));
+background: -webkit-linear-gradient(left,  #ffc1c2 0%,#e80003 100%);
+background: -o-linear-gradient(left,  #ffc1c2 0%,#e80003 100%);
+background: -ms-linear-gradient(left,  #ffc1c2 0%,#e80003 100%);
+background: linear-gradient(to right,  #ffc1c2 0%,#e80003 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffc1c2', endColorstr='#e80003',GradientType=1 );
+
+}
+
+#capsule2{
+background: #a193f2;
+background: -moz-linear-gradient(left,  #a193f2 0%, #4c2ef4 50%, #4c2ef4 100%);
+background: -webkit-gradient(linear, left top, right top, color-stop(0%,#a193f2), color-stop(50%,#4c2ef4), color-stop(100%,#4c2ef4));
+background: -webkit-linear-gradient(left,  #a193f2 0%,#4c2ef4 50%,#4c2ef4 100%);
+background: -o-linear-gradient(left,  #a193f2 0%,#4c2ef4 50%,#4c2ef4 100%);
+background: -ms-linear-gradient(left,  #a193f2 0%,#4c2ef4 50%,#4c2ef4 100%);
+background: linear-gradient(to right,  #a193f2 0%,#4c2ef4 50%,#4c2ef4 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a193f2', endColorstr='#a193f2',GradientType=1 );
+}
+
+#capsule3{
+background: #d0f7ca;
+background: -moz-linear-gradient(left,  #d0f7ca 0%, #47f92f 50%, #d0f7ca 100%);
+background: -webkit-gradient(linear, left top, right top, color-stop(0%,#d0f7ca), color-stop(50%,#47f92f), color-stop(100%,#d0f7ca));
+background: -webkit-linear-gradient(left,  #d0f7ca 0%,#47f92f 50%,#d0f7ca 100%);
+background: -o-linear-gradient(left,  #d0f7ca 0%,#47f92f 50%,#d0f7ca 100%);
+background: -ms-linear-gradient(left,  #d0f7ca 0%,#47f92f 50%,#d0f7ca 100%);
+background: linear-gradient(to right,  #d0f7ca 0%,#47f92f 50%,#d0f7ca 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d0f7ca', endColorstr='#d0f7ca',GradientType=1 );
+}
+
+#slider1, #slider2, #slider3{
+	width:4px;
+	margin-left:-2px;
+	height:12px;
+	background-color:#000000;
+}
+
+.redbutton1{
+	width:250px;
+	height:250px;
+	background-image:url(imagens/arcade_red.png);
+}
+
+.redbutton2{
+	width:250px;
+	height:250px;
+	background-image:url(imagens/arcade_red.png);
+	background-position:250px;
+}
+
+.bluebutton1{
+	width:250px;
+	height:250px;
+	background-image:url(imagens/arcade_blue.png);
+}
+
+.bluebutton2{
+	width:250px;
+	height:250px;
+	background-image:url(imagens/arcade_blue.png);
+	background-position:250px;
+}
+
+</style>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js">
+</script>
+<script>
+$(document).ready(function(){
+  $("#redbutton").mousedown(function(){
+   document.getElementById("redbutton").className = "redbutton2";
+  });
+   $("#redbutton").mouseup(function(){
+   document.getElementById("redbutton").className = "redbutton1";
+  });
+});
+
+$(document).ready(function(){
+  $("#bluebutton").mousedown(function(){
+   document.getElementById("bluebutton").className = "bluebutton2";
+  });
+   $("#bluebutton").mouseup(function(){
+   document.getElementById("bluebutton").className = "bluebutton1";
+  });
+});
+</script>
+
+<script>
+function reseta(){
+	location.reload()
+}
+
+function anima(theslider){
+	if(document.getElementById(theslider).style.left=="0%"){
+		$("#"+theslider).animate({"left": 99+"%"}, 1200);
+	}
+	else if(document.getElementById(theslider).style.left=="99%"){
+		$("#"+theslider).animate({"left": 0+"%"}, 1200);
+	}
+
+}
+
+var passo=1;
+var distancia;
+var forca;
+var angulo;
+var posicao;
+var copo_diam = 80;
+var copo_dist = 500;
+
+var copo_top = copo_dist + (copo_diam/2);
+var copo_left = 40;
+var copo_right= 60;
+var copo_bottom = copo_dist - (copo_diam/2);
+
+function getvalue(){
+	$("#slider"+passo).stop();
+	clearInterval(eval("timer"+passo));
+	document.getElementById("valor"+passo).innerHTML=(parseInt(document.getElementById("slider"+passo).style.left))
+	passo++;
+
+
+	if(passo!=4){
+		anima('slider'+passo);
+		//eval("timer"+passo) = setInterval(function(){ anima('slider'+passo); },100);
+		if(passo==2){
+			timer2 = setInterval(function(){ anima('slider'+passo); },100);
+		}
+		else if (passo==3){
+			timer3 = setInterval(function(){ anima('slider'+passo); },100);
+		}
+	}
+	else{
+		forca = parseFloat(document.getElementById("slider1").style.left)/10;
+		angulo = parseFloat(document.getElementById("slider2").style.left);
+		posicao = parseInt(document.getElementById("slider3").style.left);
+
+		distancia = ((parseFloat(forca)*parseFloat(forca))/10);
+		distancia = distancia*(Math.sin((2*angulo)*Math.PI/180));
+		distancia = parseFloat(distancia)*100;
+		distancia = parseInt(distancia)
+		document.getElementById("valor"+passo).innerHTML=distancia;
+		//distancia = 500;
+		if((distancia < copo_top) && (distancia > copo_bottom) && (posicao > copo_left) && (posicao < copo_right)){
+			alert("Você acertou");
+		}
+	}
+}
+var timer1 = setInterval(function(){ anima('slider1'); },100);
+</script>
+</head>
+<body onLoad="javascript:anima('slider1');">
+<div id="capsule1" style="width:350px; border:solid; border-width:1px;">
+	<div id="slider1" style="position:relative; left:0%;"></div>
+</div>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="1">For&ccedil;a:&nbsp;</td>
+    <td width="97%"><div id="valor1">0</div></td>
+  </tr>
+</table>
+<br>
+<br>
+<div id="capsule2" style="width:350px; border:solid; border-width:1px;">
+  <div id="slider2" style="position:relative; left:0%;"></div>
+</div>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="44">&Acirc;ngulo:&nbsp;</td>
+    <td width="1206"><div id="valor2">0</div></td>
+  </tr>
+</table>
+<br>
+<br>
+
+<div id="capsule3" style="width:350px; border:solid; border-width:1px;">
+  <div id="slider3" style="position:relative; left:0%;"></div>
+</div>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="51">Posi&ccedil;&atilde;o:&nbsp;</td>
+    <td width="1199"><div id="valor3">0</div></td>
+  </tr>
+</table>
+<br>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="51">Dist&acirc;ncia:&nbsp;</td>
+    <td width="1199"><div id="valor4">0</div></td>
+  </tr>
+</table>
+<br>
+<br>
+<table width="70" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td><div id="redbutton" class="redbutton1" onClick="javascript:getvalue();"></div></td>
+    <td><div id="bluebutton" class="bluebutton1" onClick="javascript:reseta();"></div></td>
+  </tr>
+  <tr>
+    <td align="center">Parar </td>
+    <td align="center">Reset</td>
+  </tr>
+</table>
+</body>
+</html>
